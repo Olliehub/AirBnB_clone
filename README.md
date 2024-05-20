@@ -1,153 +1,35 @@
-# AirBnB Clone - The Console
+A README report on the AirBNB project!
 
-  
-![HolBnB clone](https://github.com/monoprosito/AirBnB_clone/blob/feature/console/hBnB.png?raw=true)
-Welcome to the AirBnB clone project! (The Holberton B&B)
 
-  
+***Project Description***
 
-## Getting Started
+This Airbnb Clone is the first main project at ALX Software Engineering Programme. The aim is to develop an entire web application that simulates the behavior of the Airbnb platform. Starting from the console or command interpreter, to manipulate data without a visual interface, like in a Shell (perfect for development and debugging), followed by the construction of a website (the front-end) that shows the final product to everybody: static and dynamic, once it's finished what follows is the connection with the database or files that store data (data = objects). And last but not least, the creation of an API that provides a communication interface between the front-end and your data (retrieve, create, delete, update them).
 
- 
-**What’s a command interpreter?**
 
-Do you remember the Shell? It’s exactly the same but limited to a specific use-case. In our case, we want to
+***Requirements***
 
-be able to manage the objects of our project:
+Python Scripts
+Allowed editors: vi, vim, emacs
+All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
+All your files should end with a new line
+The first line of all your files should be exactly #!/usr/bin/python3
+A README.md file, at the root of the folder of the project, is mandatory
+Your code should use the pycodestyle (version 2.8.*)
+All your files must be executable
+The length of your files will be tested using wc
+All your modules should have a documentation (python3 -c 'print(__import__("my_module").__doc__)')
+All your classes should have a documentation (python3 -c 'print(__import__("my_module").MyClass.__doc__)')
+All your functions (inside and outside a class) should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
+A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
 
-  
 
-- Create a new object (ex: a new User or a new Place)
 
-- Retrieve an object from a file, a database etc…
+***The Console***
 
-- Do operations on objects (count, compute stats, etc…)
+HTML, My SQL HTML with Fabric Flask web application server REST API WEB Dynamic Functionalities of this command interpreter: Create a new object (ex: a new User or a new Place) Retrieve an object from a file, a database etc... Do operations on objects (count, compute stats, etc...) Update attributes of an object Destroy an object
 
-- Update attributes of an object
+Storage Instances of classes are saved in a JSON string representation to the file.json file at the root directory. Any modifications (additions, deletions, updates) to the objects are saved automatically to the file. The JSON file serves as a simple database that helps the data persist across sessions.
 
-- Destroy an object
-
-  
-
-### Learning Objectives
-
-  
-
-## General
-
- - How to create a Python package
-   
-  - How to create a command interpreter in Python using the cmd module
-   
-   - What is Unit testing and how to implement it in a large project
-   
-   - How to serialize and deserialize a Class
-   
-   - How to write and read a JSON file
-   
-   - How to manage datetime
-   
-   - What is an UUID
-   
-   - What is *args and how to use it
-   
-   - What is **kwargs and how to use it
-   
-   - How to handle named arguments in a function
-
-  
-  
-
-## Execution
-
-  
-Your shell should work like this in interactive mode:
-
-  
-```
-$ ./console.py
-(hbnb) help
-
-Documented commands (type help <topic>):
-========================================
-EOF help quit
-
-(hbnb)
-(hbnb)
-(hbnb) quit
-$
-```
-
-But also in non-interactive mode: (like the Shell project in C)
-
-```
-$ echo "help" | ./console.py
-
-(hbnb)
-
-Documented commands (type help <topic>):
-========================================
-
-EOF help quit
-(hbnb)
-$
-$ cat test_help
-help
-$
-$ cat test_help | ./console.py
-(hbnb)
-
-  
-Documented commands (type help <topic>):
-========================================
-EOF help quit
-(hbnb)
-$
-
-```
-
-## Usage Examples
-
-**Launching the console**
-```
-$ ./console.py
-(hbnb) 
-```
-**Creating a new object**
-```
-(hbnb) create
-** class name missing **
-(hbnb) create User
-670265eb-5982-489e-8b92-2dff054f0776
-```
-**Show an object**
-```
-(hbnb) show User
-** instance id missing **
-(hbnb) show User 670265eb-5982-489e-8b92-2dff054f0776
-[User] (670265eb-5982-489e-8b92-2dff054f0776) {'created_at': datetime.datetime(2020, 2, 19, 18, 8, 58, 458246), 'id': '670265eb-5982-489e-8b92-2dff054f0776', 'updated_at': datetime.datetime(2020, 2, 19, 18, 8, 58, 458261)}
-```
-**Update an object**
-```
-(hbnb) all
-["[User] (70f71c16-962b-48ad-9df8-9203fe23d612) {'created_at': datetime.datetime(2020, 2, 19, 18, 11, 32, 341144), 'id': '70f71c16-962b-48ad-9df8-9203fe23d612', 'updated_at': datetime.datetime(2020, 2, 19, 18, 11, 32, 341161)}"]
-(hbnb) update
-** class name missing **
-(hbnb) update User
-** instance id missing **
-(hbnb) update User 70f71c16-962b-48ad-9df8-9203fe23d612
-** attribute name missing **
-(hbnb) update User 70f71c16-962b-48ad-9df8-9203fe23d612  Age "20"
-(hbnb) all
-["[User] (70f71c16-962b-48ad-9df8-9203fe23d612) {'Age': 20, 'created_at': datetime.datetime(2020, 2, 19, 18, 11, 32, 341144), 'id': '70f71c16-962b-48ad-9df8-9203fe23d612', 'updated_at': datetime.datetime(2020, 2, 19, 18, 13, 9, 937933)}"]
-(hbnb)
-```
-**Destroy an object**
-```
-(hbnb) destroy
-** class name missing **
-(hbnb) destroy User
-** instance id missing **
-(hbnb) destroy User 670265eb-5982-489e-8b92-2dff054f0776
-(hbnb)
-```
+The contributors to this project are ; 
+Charles Ubom - <Charlibossubom@gmail.com> &&
+Hazel Larkai - <>
